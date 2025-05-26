@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo "Monitoring directory: ${params.TRACK_DIR}"
                 sh '''
-                    chmod +x check_disk_usgae.sh
+                    chmod +x check_disk_usage.sh
                     ./check_disk_usage.sh "${TRACK_DIR}"
                 '''
             }
